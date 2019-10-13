@@ -1,6 +1,6 @@
 package br.upf.ads.aeroporto.utils;
 
-import br.upf.ads.aeroporto.CLI;
+import br.upf.ads.aeroporto.cli.CLI;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

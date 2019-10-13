@@ -3,6 +3,7 @@ package br.upf.ads.aeroporto.cli.menus;
 import br.upf.ads.aeroporto.cli.CLI;
 import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
 import br.upf.ads.aeroporto.cli.CLIMenuCollection;
+import br.upf.ads.aeroporto.cli.menus.flys.CLIFlysMenuRunnable;
 import br.upf.ads.aeroporto.utils.DateTimeUtils;
 
 public class CLIInitialMenuRunnable extends CLIMenuRunnable {
