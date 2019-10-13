@@ -1,27 +1,22 @@
-package br.upf.ads.aeroporto;
+package br.upf.ads.aeroporto.cli;
 
 import java.io.InputStream;
-import java.io.PrintWriter;
+import java.io.PrintStream;
 import java.util.Scanner;
 
 public class CLI {
 
-    private PrintWriter out;
+    private PrintStream out;
     private InputStream in;
     private Scanner scanner;
 
-    public CLI(InputStream in, PrintWriter out) {
+    public CLI(InputStream in, PrintStream out) {
         this.out = out;
         this.in = in;
         this.scanner = new Scanner(in);
     }
 
-    public void showMenu() {
-        out.println("");
-
-    }
-
-    public PrintWriter getOut() {
+    public PrintStream getOut() {
         return out;
     }
 
