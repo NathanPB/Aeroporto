@@ -1,11 +1,11 @@
-package br.upf.ads.aeroporto.cli.menus.flys;
+package br.upf.ads.aeroporto.cli.menus.flyghts;
 
 import br.upf.ads.aeroporto.cli.CLI;
 import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
 
-public class CLIFlysReportMenuRunnable extends CLIMenuRunnable {
+public class CLIFlyghtsReportMenuRunnable extends CLIMenuRunnable {
 
-    public CLIFlysReportMenuRunnable(CLI cli) {
+    public CLIFlyghtsReportMenuRunnable(CLI cli) {
         super(cli);
     }
 

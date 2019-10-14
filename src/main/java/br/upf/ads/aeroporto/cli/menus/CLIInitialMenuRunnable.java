@@ -3,7 +3,7 @@ package br.upf.ads.aeroporto.cli.menus;
 import br.upf.ads.aeroporto.cli.CLI;
 import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
 import br.upf.ads.aeroporto.cli.CLIMenuCollection;
-import br.upf.ads.aeroporto.cli.menus.flys.CLIFlysMenuRunnable;
+import br.upf.ads.aeroporto.cli.menus.flyghts.CLIFlyghtsMenuRunnable;
 import br.upf.ads.aeroporto.utils.DateTimeUtils;
 
 public class CLIInitialMenuRunnable extends CLIMenuRunnable {
@@ -12,7 +12,7 @@ public class CLIInitialMenuRunnable extends CLIMenuRunnable {
 
     public CLIInitialMenuRunnable(CLI cli) {
         super(cli);
-         menuList.add(new CLIFlysMenuRunnable(cli, this));
+         menuList.add(new CLIFlyghtsMenuRunnable(cli, this));
          menuList.add(new CLIExitMenuRunnable(cli));
     }
 

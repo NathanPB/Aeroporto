@@ -1,19 +1,19 @@
-package br.upf.ads.aeroporto.cli.menus.flys;
+package br.upf.ads.aeroporto.cli.menus.flyghts;
 
 import br.upf.ads.aeroporto.cli.CLI;
 import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
 import br.upf.ads.aeroporto.cli.CLIMenuCollection;
 import br.upf.ads.aeroporto.cli.menus.CLIBackMenuRunnable;
 
-public class CLIFlysMenuRunnable extends CLIMenuRunnable {
+public class CLIFlyghtsMenuRunnable extends CLIMenuRunnable {
     private static CLIMenuCollection menuList = new CLIMenuCollection(new CLIMenuRunnable[]{
 
     });
 
-    public CLIFlysMenuRunnable(CLI cli, CLIMenuRunnable lastMenu) {
+    public CLIFlyghtsMenuRunnable(CLI cli, CLIMenuRunnable lastMenu) {
         super(cli);
-        menuList.add(new CLIFlysReportMenuRunnable(cli));
-        menuList.add(new CLIFlysCurrentMenuRunnable(cli));
+        menuList.add(new CLIFlyghtsReportMenuRunnable(cli));
+        menuList.add(new CLIFlyghtsCurrentMenuRunnable(cli));
         menuList.add(new CLIBackMenuRunnable(cli, lastMenu));
     }
 
