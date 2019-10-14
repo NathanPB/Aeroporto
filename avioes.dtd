@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT avioes (avioes+)>
+<!ELEMENT aviao (codigo,modelo,ano,marca,ano_fabricacao)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT ano (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT ano_fabricacao (#PCDATA)>
+
+

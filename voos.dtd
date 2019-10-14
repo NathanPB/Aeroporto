@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT voos (voos*)>
+<!ELEMENT voo (escala+)>
+<!ELEMENT escalas (escala+)>
+<!ELEMENT escala ()>
+
+<!ATTLIST voo id CDATA #REQUIRED>
+<!ATTLIST escala
+        origem CDATA #REQUIRED
+        destino CDATA #REQUIRED
+        saida CDATA #REQUIRED
+        chegada CDATA #REQUIRED
+>
+
