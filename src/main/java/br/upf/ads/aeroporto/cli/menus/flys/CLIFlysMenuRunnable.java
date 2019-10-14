@@ -19,13 +19,8 @@ public class CLIFlysMenuRunnable extends CLIMenuRunnable {
 
     @Override
     public void run() {
-        super.run();
+        cli.getOut().println("Escolha uma opção:");
         menuList.showChooseDialog(cli);
-    }
-
-    @Override
-    public String getInitialDialog() {
-        return "Escolha uma opção:";
     }
 
     @Override

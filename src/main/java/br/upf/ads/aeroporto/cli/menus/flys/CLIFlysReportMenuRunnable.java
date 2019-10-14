@@ -11,13 +11,8 @@ public class CLIFlysReportMenuRunnable extends CLIMenuRunnable {
 
     @Override
     public void run() {
-        super.run();
+        cli.getOut().println("Relatório de Vôos");
         // TODO Imprimir relatório dos vôos
-    }
-
-    @Override
-    public String getInitialDialog() {
-        return "Relatório de vôos:";
     }
 
     @Override

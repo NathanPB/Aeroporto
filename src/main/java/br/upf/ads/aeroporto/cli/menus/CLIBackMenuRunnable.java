@@ -13,13 +13,7 @@ public class CLIBackMenuRunnable extends CLIMenuRunnable {
 
     @Override
     public void run() {
-        super.run();
         lastMenu.run();
-    }
-
-    @Override
-    public String getInitialDialog() {
-        return "";
     }
 
     @Override

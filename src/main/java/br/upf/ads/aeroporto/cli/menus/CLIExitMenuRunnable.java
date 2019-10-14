@@ -10,13 +10,8 @@ public class CLIExitMenuRunnable extends CLIMenuRunnable {
 
     @Override
     public void run() {
-        super.run();
+        cli.getOut().println("Saindo...");
         System.exit(0);
-    }
-
-    @Override
-    public String getInitialDialog() {
-        return "Saindo...";
     }
 
     @Override

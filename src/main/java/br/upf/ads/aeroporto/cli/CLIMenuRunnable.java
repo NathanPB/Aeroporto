@@ -7,10 +7,7 @@ public abstract class CLIMenuRunnable {
         this.cli = cli;
     }
 
-    public abstract String getInitialDialog();
     public abstract String getDescription();
     public abstract char getKey();
-    public void run() {
-        cli.getOut().println(getInitialDialog());
-    }
+    public abstract void run();
 }

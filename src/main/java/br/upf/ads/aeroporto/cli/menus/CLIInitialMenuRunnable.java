@@ -18,13 +18,8 @@ public class CLIInitialMenuRunnable extends CLIMenuRunnable {
 
     @Override
     public void run() {
-        super.run();
+        cli.getOut().println("Bem Vindo! [" + DateTimeUtils.formatCurrentDateTime() + "]");
         menuList.showChooseDialog(this.cli);
-    }
-
-    @Override
-    public String getInitialDialog() {
-        return "Bem Vindo! [" + DateTimeUtils.formatCurrentDateTime() + "]";
     }
 
     @Override

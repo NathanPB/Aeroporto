@@ -11,18 +11,13 @@ public class CLIFlysCurrentMenuRunnable extends CLIMenuRunnable {
 
     @Override
     public void run() {
-        super.run();
+        cli.getOut().println("Vôos em Andamento:");
         // TODO Imprimir vôos em andamento
     }
 
     @Override
     public String getDescription() {
         return "Vôos em Andamento";
-    }
-
-    @Override
-    public String getInitialDialog() {
-        return getDescription() + ":";
     }
 
     @Override
