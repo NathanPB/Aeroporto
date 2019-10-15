@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT aeroportos (aeroportos+)>
+<!ELEMENT aeroportos (aeroporto+)>
 <!ELEMENT aeroporto (#PCDATA)>
 <!ATTLIST aeroporto id CDATA #REQUIRED>
 
