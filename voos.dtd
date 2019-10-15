@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT voos (voos*)>
+<!ELEMENT voos (voo*)>
 <!ELEMENT voo (escala+)>
 <!ELEMENT escalas (escala+)>
 <!ELEMENT escala ()>
