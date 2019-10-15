@@ -2,13 +2,23 @@
 <!DOCTYPE voos SYSTEM "voos.dtd">
 <voos>
     <voo id="1">
-        <escala origem="A" destino="B" saida="2019-06-07 19:30" chegada="2019-06-07 20:00"/>
-        <escala origem="B" destino="F" saida="2019-06-07" chegada="2019-06-08 00:30"/>
+        <escala>
+            <local aeroporto="A" saida="2019-06-07 19:30"/>
+            <local aeroporto="B" chegada="2019-06-07 20:00"/>
+        </escala>
     </voo>
     <voo id="2">
-        <escala origem="C" destino="B" saida="2019-04-01 12:00" chegada="2019-04-01 15:45"/>
+        <escala>
+            <local aeroporto="A" saida="2019-06-07 19:30"/>
+            <local aeroporto="B" chegada="2019-06-07 20:00" saida="2019-06-07 20:30"/>
+            <local aeroporto="C" chegada="2019-06-07 21:00"/>
+        </escala>
     </voo>
     <voo id="3">
-        <escala origem="F" destino="C" saida="2019-07-28 06:00" chegada="2019-07-28 12:00"/>
+        <escala>
+            <local aeroporto="F" saida="2019-03-07 15:40"/>
+            <local aeroporto="D" chegada="2019-03-07 17:15" saida="2019-03-07 17:30"/>
+            <local aeroporto="J" chegada="2019-03-07 18:00"/>
+        </escala>
     </voo>
 </voos>

@@ -2,13 +2,12 @@
 <!ELEMENT voos (voo*)>
 <!ELEMENT voo (escala+)>
 <!ELEMENT escalas (escala+)>
-<!ELEMENT escala EMPTY>
+<!ELEMENT escala (local+)>
+<!ELEMENT local EMPTY>
 
 <!ATTLIST voo id CDATA #REQUIRED>
-<!ATTLIST escala
-        origem CDATA #REQUIRED
-        destino CDATA #REQUIRED
-        saida CDATA #REQUIRED
-        chegada CDATA #REQUIRED
+<!ATTLIST local
+          aeroporto CDATA #REQUIRED
+          chegada CDATA #IMPLIED
+          saida CDATA #IMPLIED
 >
-
