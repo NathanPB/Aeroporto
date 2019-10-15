@@ -2,7 +2,7 @@
 <!ELEMENT voos (voo*)>
 <!ELEMENT voo (escala+)>
 <!ELEMENT escalas (escala+)>
-<!ELEMENT escala ()>
+<!ELEMENT escala EMPTY>
 
 <!ATTLIST voo id CDATA #REQUIRED>
 <!ATTLIST escala
