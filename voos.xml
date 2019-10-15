@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE voos SYSTEM "voos.dtd">
+<voos>
+    <voo id="1">
+        <escala origem="A" destino="B" saida="2019-06-07 19:30" chegada="2019-06-07 20:00"/>
+        <escala origem="B" destino="F" saida="2019-06-07" chegada="2019-06-08 00:30"/>
+    </voo>
+    <voo id="2">
+        <escala origem="C" destino="B" saida="2019-04-01 12:00" chegada="2019-04-01 15:45"/>
+    </voo>
+    <voo id="3">
+        <escala origem="F" destino="C" saida="2019-07-28 06:00" chegada="2019-07-28 12:00"/>
+    </voo>
+</voos>

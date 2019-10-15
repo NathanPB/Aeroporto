@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE aeroportos SYSTEM "aeroporto.dtd">
+<aeroportos>
+    <aeroporto id="A">Hartsfield–Jackson Atlanta International</aeroporto>
+    <aeroporto id="B">Beijing Capital International Airport</aeroporto>
+    <aeroporto id="C">London Heathrow Airport</aeroporto>
+    <aeroporto id="D">O'Hare International Airport</aeroporto>
+    <aeroporto id="E">Tokyo International Airport</aeroporto>
+    <aeroporto id="F">Los Angeles International Airport</aeroporto>
+    <aeroporto id="G">Paris Charles de Gaulle Airport</aeroporto>
+    <aeroporto id="H">Dallas Fort Worth International Airport</aeroporto>
+    <aeroporto id="I">Frankfurt Airport</aeroporto>
+    <aeroporto id="J">Hong Kong International Airport</aeroporto>
+</aeroportos>
