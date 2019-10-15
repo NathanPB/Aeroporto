@@ -4,7 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DateTimeUtils {
-    public static final SimpleDateFormat DATETIME_FORMAT = new SimpleDateFormat("d/M/Y - K:m");
+    public static final SimpleDateFormat DATETIME_FORMAT = new SimpleDateFormat("d/M/Y K:m");
+    public static final SimpleDateFormat DATETIME_UNIVERSAL_FORMAT = new SimpleDateFormat("Y-M-d K:m");
     public static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("d/M/Y");
 
     public static String formatCurrentDateTime() {
