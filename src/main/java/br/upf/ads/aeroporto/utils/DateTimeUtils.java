@@ -23,4 +23,13 @@ public class DateTimeUtils {
     public static String formatDate(Date date) {
         return DATE_FORMAT.format(date);
     }
+
+    public static Date parseFromUniversal(String str) {
+        try {
+            return DATETIME_UNIVERSAL_FORMAT.parse(str);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return new Date();
+        }
+    }
 }
