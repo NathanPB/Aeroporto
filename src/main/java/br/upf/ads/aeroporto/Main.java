@@ -9,6 +9,6 @@ public class Main {
     public static CLIMenuRunnable initialMenu = new CLIInitialMenuRunnable(cli);
 
     public static void main(String[] args) {
-        initialMenu.run();
+        while(true) initialMenu.run();
     }
 }
