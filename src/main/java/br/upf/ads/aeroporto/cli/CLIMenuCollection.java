@@ -24,7 +24,7 @@ public class CLIMenuCollection extends ArrayList<CLIMenuRunnable> {
 
             out.println("> ");
 
-            String choosed = cli.getScanner().next().toUpperCase().charAt(0) + "";
+            String choosed = cli.getScanner().nextLine().toUpperCase().charAt(0) + "";
             Optional<CLIMenuRunnable> menu = this.stream()
                 .filter(it -> (it.getKey() + "").equalsIgnoreCase(choosed))
                 .findFirst();
