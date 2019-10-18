@@ -49,6 +49,6 @@ public class ViewFlightsRunnable extends CLIMenuRunnable {
 
     @Override
     public char getKey() {
-        return 'A';
+        return 'L';
     }
 }
