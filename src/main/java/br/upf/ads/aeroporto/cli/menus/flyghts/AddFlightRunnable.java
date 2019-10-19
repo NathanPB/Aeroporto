@@ -29,6 +29,7 @@ public class AddFlightRunnable extends CLIMenuRunnable {
         } while (existingFlights.contains(id));
 
         Element voo = Main.voos.createElement("voo");
+        voo.appendChild(Main.voos.createElement("escala"));
         voo.setAttribute("id", id);
         Main.voos.getElementsByTagName("voos").item(0).appendChild(voo);
         cli.getOut().println("Adicionado Vôo " + id);
