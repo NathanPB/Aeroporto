@@ -1,8 +1,8 @@
 package br.upf.ads.aeroporto.cli.menus;
 
 import br.upf.ads.aeroporto.cli.CLI;
-import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
 import br.upf.ads.aeroporto.cli.CLIMenuCollection;
+import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
 import br.upf.ads.aeroporto.cli.menus.flyghts.AddFlightRunnable;
 import br.upf.ads.aeroporto.cli.menus.flyghts.EditFlightRunnable;
 import br.upf.ads.aeroporto.cli.menus.flyghts.RemoveFlightRunnable;

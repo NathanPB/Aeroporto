@@ -1,14 +1,10 @@
 package br.upf.ads.aeroporto.cli.menus.flyghts.flightRange;
 
-import br.upf.ads.aeroporto.Main;
 import br.upf.ads.aeroporto.cli.CLI;
 import br.upf.ads.aeroporto.cli.CLIMenuCollection;
 import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
-import br.upf.ads.aeroporto.cli.menus.CLIBackMenuRunnable;
 import br.upf.ads.aeroporto.utils.MutableContainer;
 import org.w3c.dom.Element;
-
-import java.util.Optional;
 
 public class EditFlightRangeRunnable extends CLIMenuRunnable {
     private CLIMenuCollection menus = new CLIMenuCollection();

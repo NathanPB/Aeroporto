@@ -5,12 +5,7 @@ import br.upf.ads.aeroporto.cli.CLI;
 import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
 import br.upf.ads.aeroporto.utils.DOMUtils;
 import br.upf.ads.aeroporto.utils.DateTimeUtils;
-import br.upf.ads.aeroporto.utils.StringUtils;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
-import javax.xml.bind.Element;
-import java.io.PrintStream;
 import java.util.stream.Collectors;
 
 public class ViewFlightsRunnable extends CLIMenuRunnable {

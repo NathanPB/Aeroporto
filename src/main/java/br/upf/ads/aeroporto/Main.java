@@ -1,8 +1,8 @@
 package br.upf.ads.aeroporto;
 
 import br.upf.ads.aeroporto.cli.CLI;
-import br.upf.ads.aeroporto.cli.menus.CLIInitialMenuRunnable;
 import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
+import br.upf.ads.aeroporto.cli.menus.CLIInitialMenuRunnable;
 import br.upf.ads.aeroporto.utils.DOMUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
