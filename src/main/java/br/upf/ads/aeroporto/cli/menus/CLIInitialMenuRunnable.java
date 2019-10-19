@@ -4,6 +4,7 @@ import br.upf.ads.aeroporto.cli.CLI;
 import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
 import br.upf.ads.aeroporto.cli.CLIMenuCollection;
 import br.upf.ads.aeroporto.cli.menus.flyghts.AddFlightRunnable;
+import br.upf.ads.aeroporto.cli.menus.flyghts.EditFlightRunnable;
 import br.upf.ads.aeroporto.cli.menus.flyghts.RemoveFlightRunnable;
 import br.upf.ads.aeroporto.cli.menus.flyghts.ViewFlightsRunnable;
 import br.upf.ads.aeroporto.utils.DateTimeUtils;
@@ -17,6 +18,7 @@ public class CLIInitialMenuRunnable extends CLIMenuRunnable {
         menuList.add(new ViewFlightsRunnable(cli));
         menuList.add(new AddFlightRunnable(cli));
         menuList.add(new RemoveFlightRunnable(cli));
+        menuList.add(new EditFlightRunnable(cli, null));
         menuList.add(new CLIExitMenuRunnable(cli));
     }
 
