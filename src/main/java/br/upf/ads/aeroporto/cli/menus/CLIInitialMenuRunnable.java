@@ -20,6 +20,7 @@ public class CLIInitialMenuRunnable extends CLIMenuRunnable {
         menuList.add(new RemoveFlightRunnable(cli));
         menuList.add(new EditFlightRunnable(cli, null));
         menuList.add(new CLIExitMenuRunnable(cli));
+        //TODO persist the XML
     }
 
     @Override

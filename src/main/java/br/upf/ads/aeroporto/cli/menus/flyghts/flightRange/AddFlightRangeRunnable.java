@@ -16,8 +16,8 @@ public class AddFlightRangeRunnable extends CLIMenuRunnable {
     @Override
     public void run() {
         Element e = Main.voos.createElement("local");
-        //TODO send ``e`` to edit menu
         this.ranges.appendChild(e);
+        new EditFlightRangeRunnable(cli, e, this.ranges).run();
     }
 
     @Override

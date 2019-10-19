@@ -34,8 +34,7 @@ public class AddFlightRunnable extends CLIMenuRunnable {
         Main.voos.getElementsByTagName("voos").item(0).appendChild(voo);
         cli.getOut().println("Adicionado Vôo " + id);
 
-        //TODO persist
-        //TODO open flight range edit menu
+        new EditFlightRunnable(cli, voo).run();
     }
 
     @Override

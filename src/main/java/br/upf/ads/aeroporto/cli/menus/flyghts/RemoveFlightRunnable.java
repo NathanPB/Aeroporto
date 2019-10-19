@@ -20,7 +20,6 @@ public class RemoveFlightRunnable extends CLIMenuRunnable {
                 .filter(it -> it.getAttribute("id").equalsIgnoreCase(selected))
                 .findFirst().get()
         );
-        //TODO write to file
     }
 
     @Override
