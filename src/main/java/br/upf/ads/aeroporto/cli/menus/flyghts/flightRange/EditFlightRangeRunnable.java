@@ -49,8 +49,7 @@ public class EditFlightRangeRunnable extends CLIMenuRunnable {
             public void run() {
                 stillInMenu.set(false);
             }
-        }
-        )
+        })
             .filter(it -> menus.stream().map(Object::getClass).noneMatch(c2 -> c2.equals(it.getClass())))
             .forEach(menus::add);
         while (stillInMenu.get()) menus.showChooseDialog(cli);
