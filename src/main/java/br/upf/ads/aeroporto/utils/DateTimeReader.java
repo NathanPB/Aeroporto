@@ -66,7 +66,7 @@ public class DateTimeReader {
 
         do {
             try {
-                cli.getOut().println(message);
+                cli.getOut().println(message.replace("%FORMAT_PATTERN%", format.toPattern()));
                 date = format.parse(cli.getScanner().nextLine());
                 if(date.compareTo(min) < 0 || date.compareTo(max) > 0) {
                     date = null;
