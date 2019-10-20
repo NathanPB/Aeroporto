@@ -32,6 +32,8 @@ public class EditFlightRangeRunnable extends CLIMenuRunnable {
 
         Stream.of(
             new EditAirportRunnable(cli, range),
+            new EditRangeArrivalRunnable(cli, range),
+            new EditRangeDepartureRunnable(cli, range),
             new CLIMenuRunnable(cli) {
             @Override
             public String getDescription() {
