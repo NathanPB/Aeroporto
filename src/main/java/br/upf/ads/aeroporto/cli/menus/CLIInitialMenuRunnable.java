@@ -1,5 +1,6 @@
 package br.upf.ads.aeroporto.cli.menus;
 
+import br.upf.ads.aeroporto.Main;
 import br.upf.ads.aeroporto.cli.CLI;
 import br.upf.ads.aeroporto.cli.CLIMenuCollection;
 import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
@@ -20,11 +21,11 @@ public class CLIInitialMenuRunnable extends CLIMenuRunnable {
         menuList.add(new RemoveFlightRunnable(cli));
         menuList.add(new EditFlightRunnable(cli, null));
         menuList.add(new CLIExitMenuRunnable(cli));
-        //TODO persist the XML
     }
 
     @Override
     public void run() {
+        Main.persist();
         cli.getOut().println("Bem Vindo! [" + DateTimeUtils.formatCurrentDateTime() + "]");
         menuList.showChooseDialog(this.cli);
     }

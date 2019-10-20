@@ -8,6 +8,9 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,5 +34,17 @@ public class Main {
             System.exit(1);
         }
         while(true) initialMenu.run();
+    }
+
+    public static void persist() {
+        try {
+            TransformerFactory.newInstance().newTransformer().transform(
+                new DOMSource(voos),
+                new StreamResult(voos.getDocumentURI())
+            );
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            System.exit(1);
+        }
     }
 }
