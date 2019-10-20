@@ -84,6 +84,6 @@ public class ReaderUtils {
             .map(indexer)
             .forEach(cli.getOut()::println);
 
-        return (Element) rangesElement.get(ReaderUtils.chooseInRange(cli, 0, rangesElement.size()-1));
+        return rangesElement.get(ReaderUtils.chooseInRange(cli, 0, rangesElement.size()-1));
     }
 }
