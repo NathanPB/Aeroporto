@@ -4,7 +4,10 @@ import br.upf.ads.aeroporto.cli.CLI;
 import br.upf.ads.aeroporto.cli.CLIMenuCollection;
 import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
 import br.upf.ads.aeroporto.utils.MutableContainer;
+import br.upf.ads.aeroporto.utils.ReaderUtils;
 import org.w3c.dom.Element;
+
+import java.util.stream.Stream;
 
 public class EditFlightRangeRunnable extends CLIMenuRunnable {
     private CLIMenuCollection menus = new CLIMenuCollection();
@@ -20,10 +23,16 @@ public class EditFlightRangeRunnable extends CLIMenuRunnable {
 
     @Override
     public void run() {
+        if(this.range == null) {
+            this.range = ReaderUtils.chooseRange(cli, this.ranges.getChildNodes());
+        }
+
         MutableContainer<Boolean> stillInMenu = new MutableContainer<>(true);
 
-        menus.add(new EditAirportRunnable(cli, range));
-        menus.add(new CLIMenuRunnable(cli) {
+
+        Stream.of(
+            new EditAirportRunnable(cli, range),
+            new CLIMenuRunnable(cli) {
             @Override
             public String getDescription() {
                 return "Voltar";
@@ -38,13 +47,16 @@ public class EditFlightRangeRunnable extends CLIMenuRunnable {
             public void run() {
                 stillInMenu.set(false);
             }
-        });
+        }
+        )
+            .filter(it -> menus.stream().map(Object::getClass).noneMatch(c2 -> c2.equals(it.getClass())))
+            .forEach(menus::add);
         while (stillInMenu.get()) menus.showChooseDialog(cli);
     }
 
     @Override
     public String getDescription() {
-        return "Editar ou Reordenar Escala";
+        return "Editar Escala";
     }
 
     @Override

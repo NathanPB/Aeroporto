@@ -5,9 +5,12 @@ import br.upf.ads.aeroporto.cli.CLI;
 import br.upf.ads.aeroporto.cli.CLIMenuCollection;
 import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
 import br.upf.ads.aeroporto.cli.menus.flyghts.flightRange.AddFlightRangeRunnable;
+import br.upf.ads.aeroporto.cli.menus.flyghts.flightRange.EditFlightRangeRunnable;
 import br.upf.ads.aeroporto.utils.DOMUtils;
 import br.upf.ads.aeroporto.utils.ReaderUtils;
 import org.w3c.dom.Element;
+
+import java.util.stream.Stream;
 
 public class EditFlightRunnable extends CLIMenuRunnable {
     private Element flight;
@@ -28,7 +31,13 @@ public class EditFlightRunnable extends CLIMenuRunnable {
                 .findFirst().get();
         }
         Element ranges = (Element) flight.getElementsByTagName("escala").item(0);
-        menus.add(new AddFlightRangeRunnable(cli, ranges));
+
+        Stream.of(
+            new AddFlightRangeRunnable(cli, ranges),
+            new EditFlightRangeRunnable(cli, null, ranges)
+        )
+            .filter(it -> menus.stream().map(Object::getClass).noneMatch(c2 -> c2.equals(it.getClass())))
+            .forEach(menus::add);
 
         menus.showChooseDialog(cli);
     }
