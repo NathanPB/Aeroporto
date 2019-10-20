@@ -3,6 +3,7 @@ package br.upf.ads.aeroporto.cli.menus.flyghts.flightRange;
 import br.upf.ads.aeroporto.cli.CLI;
 import br.upf.ads.aeroporto.cli.CLIMenuCollection;
 import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
+import br.upf.ads.aeroporto.utils.DOMUtils;
 import br.upf.ads.aeroporto.utils.MutableContainer;
 import br.upf.ads.aeroporto.utils.ReaderUtils;
 import org.w3c.dom.Element;
@@ -24,6 +25,11 @@ public class EditFlightRangeRunnable extends CLIMenuRunnable {
     @Override
     public void run() {
         if(this.range == null) {
+            if(DOMUtils.toElementStream(ranges.getChildNodes()).count() == 0) {
+                cli.getOut().println("Este vôo ainda não possui escalas!");
+                return;
+            }
+
             this.range = ReaderUtils.chooseRange(cli, this.ranges.getChildNodes());
         }
 
