@@ -4,8 +4,10 @@ import br.upf.ads.aeroporto.Main;
 import br.upf.ads.aeroporto.cli.CLI;
 import br.upf.ads.aeroporto.cli.CLIMenuRunnable;
 import br.upf.ads.aeroporto.utils.DOMUtils;
+import br.upf.ads.aeroporto.utils.DateTimeUtils;
 import org.w3c.dom.Element;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
@@ -29,6 +31,7 @@ public class AddFlightRunnable extends CLIMenuRunnable {
         } while (existingFlights.contains(id));
 
         Element voo = Main.voos.createElement("voo");
+        voo.appendChild(Main.voos.createComment("Created in " + DateTimeUtils.DATETIME_UNIVERSAL_FORMAT.format(new Date())));
         voo.appendChild(Main.voos.createElement("escala"));
         voo.setAttribute("id", id);
         Main.voos.getElementsByTagName("voos").item(0).appendChild(voo);
